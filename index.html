@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Ecomax - An online store</title>
+          <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+          <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+       <script type="module" crossorigin src="/ecomax-template/assets/main-ec808ebb.js"></script>
+       <link rel="stylesheet" href="/ecomax-template/assets/index-64d9c7c6.css">
+     </head>
+     
+     <body>
+          
+          <!-- header starts -->
+          <header id="header" class="header w-full  space-y-4">
+               <section class="header-section header-section--notice">
+                    <div class="container">
+                         <div class="header-row flex items-center justify-between py-3 border-b border-gray-200">
+                              <div class="header-row-col">
+                                   <p class="text-xs sm:text-sm font-bold text-gray-600 flex items-center space-x-1">
+                                        <a class="inline-block text-primary hover:text-opacity-70 transition-colors duration-150" href="#">
+                                             Free shipping
+                                        </a> 
+                                        <span>Orders From All Item</span>
+                                   </p>
+                              </div>
+
+                              <div class="header-row-col flex items-center space-x-4">
+                                   <div class="header-block flex space-x-4">
+                                        <div class="dropdown dropdown--ln">
+                                             <div class="dropdown-toggle cursor-pointer">
+                                                  <button class="flex items-center space-x-1" type="button">
+                                                       <img 
+                                                            class="w-4 h-4 block object-cover object-center"
+                                                            src="/ecomax-template/assets/uk-flag-50x50-83f4e8c7.png" 
+                                                            alt=""
+                                                       >
+                                                       <span class="text-sm text-gray-700">EN</span>
+                                                       <svg class="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                       </svg>
+                                                  </button>
+                                             </div>
+                                        </div>
+
+                                        <div class="dropdown dropdown--ln">
+                                             <div class="dropdown-toggle cursor-pointer">
+                                                  <button class="flex items-center space-x-1" type="button">
+                                                       <span class="text-sm text-gray-700">USD</span>
+                                                       <svg class="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                       </svg>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="header-block">
+                                        <ul class="flex items-center space-x-2">
+                                             <li>
+                                                  <a class="inline-block text-gray-700 hover:text-gray-900 p-1 borderr border-black" href="#">
+                                                       <svg class="w-4 h-4" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                       </svg>
+                                                  </a>
+                                             </li>
+                                             
+                                             <li>
+                                                  <a class="inline-block text-gray-700 hover:text-gray-900 p-1 borderr border-black" href="#">
+                                                       <svg class="w-4 h-4" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                                       </svg>
+                                                  </a>
+                                             </li>
+
+                                             <li>
+                                                  <a class="inline-block text-gray-700 hover:text-gray-900 p-1 relative borderr border-black" href="#">
+                                                       <svg class="w-4 h-4" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                       </svg>
+
+                                                       <span class="w-4 h-4 rounded-full  bg-primary text-[.5rem] text-white inline-flex items-center justify-center absolute top-[10%] translate-x-1/2 -translate-y-1/2">
+                                                            10
+                                                       </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
+               <section class="header-section header-section--main py-6">
+                    <div class="header-container container">
+                         <div class="header-row flex items-center">
+                              <div class="header-row-col header-row-col--branding w-52">
+                                   <a class="inline-block" href="#">
+                                        <img 
+                                             class="w-ful h-auto object-cover block object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAAAhCAYAAADKxQmiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJDQjQ1NzAzODQ2MzExRUQ5MDEzRUE4QjhGRUI4NTc3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJDQjQ1NzA0ODQ2MzExRUQ5MDEzRUE4QjhGRUI4NTc3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkNCNDU3MDE4NDYzMTFFRDkwMTNFQThCOEZFQjg1NzciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkNCNDU3MDI4NDYzMTFFRDkwMTNFQThCOEZFQjg1NzciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6+nDg1AAAJG0lEQVR42uxbe1BU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" 
+                                             alt="Ecomax logo black"
+                                        >
+                                   </a>
+                              </div>
+     
+                              <div class="header-row-col header-row-col--action w-full flex justify-end space-x-10 items-center">
+                                   <div class="header-block order-2 lg:order-1">
+                                        <div class="header-blockk-inner hidden lg:block">
+                                             <nav>
+                                                  <ul class="flex items-center space-x-8">
+                                                       <li>
+                                                            <a class="inline-block tracking-wider font-bold capitalize text-primary px-2 py-1py-1" href="#">
+                                                                 Home
+                                                            </a>
+                                                       </li>
+     
+                                                       <li>
+                                                            <a class="inline-block tracking-wider font-bold capitalize text-gray-700 hover:text-gray-900 px-2 py-1" href="#">
+                                                                 Shop
+                                                            </a>
+                                                       </li>
+     
+                                                       <li>
+                                                            <a class="inline-block tracking-wider font-bold capitalize text-gray-700 hover:text-gray-900 px-2 py-1" href="#">
+                                                                 Pages
+                                                            </a>
+                                                       </li>
+     
+                                                       <li>
+                                                            <a class="inline-block tracking-wider font-bold capitalize text-gray-700 hover:text-gray-900 px-2 py-1" href="#">
+                                                                 blog
+                                                            </a>
+                                                       </li>
+     
+                                                       <li>
+                                                            <a class="inline-block tracking-wider font-bold capitalize text-gray-700 hover:text-gray-900 px-2 py-1" href="#">
+                                                                 Contact
+                                                            </a>
+                                                       </li>
+                                                  </ul>
+                                             </nav>
+                                        </div>
+     
+                                        <div class="header-blockk-inner block lg:hidden">
+                                             <button class="text-gray-500 hover:text-gray-900 transition-colors duration-150 p-2" type="button">
+                                                  <svg class="w-8 h-8" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                                  </svg>
+                                             </button> 
+                                        </div>
+                                   </div>
+     
+                                   <div class="header-block order-1 lg:order-2">
+                                        <div class="header-blockk-inner hidden lg:block">
+                                             <form action="">
+                                                  <div class="flex items-center rounded-full overflow-hidden bg-gray-200 border-0 border-gray-300">
+                                                       <input 
+                                                            class="w-full px-4 py-3 rounde text-gray-700 bg-transparent"
+                                                            type="text" 
+                                                            placeholder="Find Products..." 
+                                                            name="search" 
+                                                       >
+               
+                                                       <button class="bg-primary hover:bg-opacity-70 focus:bg-opacity-70 transition-colors duration-150 px-5 py-3 text-white  rounded-full" type="submit">
+                                                            <svg class="w-6 h-6" fill="none" stroke-width="1.5" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                                            </svg>
+                                                       </button>
+                                                  </div>
+                                             </form> 
+                                        </div>
+     
+                                        <div class="header-blockk-inner block lg:hidden">
+                                             <button class="text-gray-500 hover:text-gray-900 transition-colors duration-150 p-2" type="button">
+                                                  <svg class="w-6 h-6" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                  </svg>
+                                             </button> 
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </header>
+          <!-- header ends -->
+          
+          <main class="page page--home lg:mb-20">
+               <!-- section-hero starts -->
+               <section class="page-section page-section--hero flex flex-col justify-center min-h-[750px] bg-cover bg-center bg-no-repeat" style="background-image: url('/ecomax-template/assets/page-home-hero-section-da32ec0a.jpg');">
+                    <div class=" page-container container">
+                         <div class="page-row">
+                              <div class="page-row-col w-full md:w-[70%] xl:w-[50%] xxl:w-[40%] flex flex-col space-y-6 p-4">
+                                   <div class="flex items-center space-x-2">
+                                        <img 
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkNGODI4NUEzODUwMDExRURCNzg5QzIyOENFNTdGQjBGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkNGODI4NUE0ODUwMDExRURCNzg5QzIyOENFNTdGQjBGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0Y4Mjg1QTE4NTAwMTFFREI3ODlDMjI4Q0U1N0ZCMEYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0Y4Mjg1QTI4NTAwMTFFREI3ODlDMjI4Q0U1N0ZCMEYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6NsTS0AAAD3klEQVR42mL8//8/w2AGTAyDHIw6cNSBAw1YqGnYxetL9e483hLw4s1ZUzZW3o+poWdj6ObAOw/2ijIwMP5TUXB6iy736Okpti2HM+f9+v2ZH8j1AYn9/vt5C11DcMP+zHkwtoaCzwYfx765IPbDJ6fYNh3InPfz9+doZPW8XJJP6ZoGSxJv+VrqFXbJStjvv3x3S8CctT7dIPEth0snffnxOfr3X1CowfEWcRGjs9RwICM5NcmpS0v0dhxvbmZn4/3889dnXqCQH7I8OyvP0vIkytMf2bnYTC/mkqKU3cGv3z9H//nL4AfEDEh4k71xYdeAFzPayj4bgFG5CSlaQexNHpa1tRb6MZeo5UBGShoLpRPUN8LYBqrem6K9IRln0JSDv/8wMljphi8Nc29cNShrEnDU/gFnEpoBoqP42Llur8cvDjq++3RLA8QH1RSvP3zh5ePm/srI8IUXJgYqhtysqRfVBB0IqiX2n2lqffsR7DAfIswE1yAOxnXVRtqUZxaCDuxZZLIEWNZFk2H2Jl+brkI9Df97NMskq3YWJX/8QnYa89t8pPkz0IExN+6dZjt2eavfo1e3wclDhF/yqZWO1yYjLcx6naQQLJmgsRG9liAF/PvPsOkfg8K9J68fKgC5AejVu4a80dmW9KUtZDnw0s19wjM3Zs0j14FAxzG8+cgEzOX42yBc7DyflzWfiiO5mAFFx/dfjH5AzEAOfv2BieHbT5QGBDYc8PHbF96yyTFVJKdBKWHVGz9+MWzAEjUEwd9/DAyfvhOtPODC3XMMV26fZtNRNf1FtANBCRgUEuSAX38gDQec0QY0loOdgeHHT0hSADny+NVDTkAH7iApF4sLqd548OIOWQ78jceBjEAHMv4GqgOqgWWB209vqwGpHSRVdR7m4Uu//2JYB8QMpOCfv/GnPZAHPn9HeASEOYCZheS6OMA+6go/t+TzH8CoJgWDGhF/QNFMPF6nJKF6i6zGQqZ/fg8wVDaQEoI/foPSFjOhHIyMmRJ80o+S5UBPK98HLsZeu4AZZhexRYwAr+T8cMeowD9/GbcAMQMBvCXEPmw5Re3Bvtyu6Q9ePlc4deMCJ5Bri08tLyf3tr7MtlwTLdOvrz68Fd98fDvIDg8cyncYqxlcqE2sX0WVFnXptKbUeTvWpEO5xmjSZy00DY7Wx+XWmGmbwhN899I+v0W7VyZ/+f4VVKc7QoX3c3NwfY53i5hbGl20iepN/r4Vs30+ffvCb6VtcPjK/Tt6MLabueMjXHo2HtqsduPRbS0QW1pE4mmMR9RpmvdJRgePRh046sBRBxIGAAEGAJz5ectB/+3SAAAAAElFTkSuQmCC" 
+                                             alt=""
+                                        >
+
+                                        <p class="text-gray-600 text-lg capitalize font-normal">
+                                             100% genuine products
+                                        </p>
+                                   </div>
+
+                                   <h1 class="text-5xl md:text-6xl font-bold text-gray-800 capitalize leading-tight">
+                                        Tasty & healthy organic Food
+                                   </h1>
+
+                                   <div class="flex space-x-6">
+                                        <a 
+                                             class="bg-primary hover:bg-opacity-70 transition-colors duration-150 text-white px-6 py-3 font-normal tracking-wide capitalize inline-flex justify-center items-center space-x-2 rounded-sm shadow-lg" 
+                                             href="#"
+                                        >
+                                             <span>View Products</span>
+                                             <svg class="w-5 h-5" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                             </svg>
+                                        </a>
+
+                                        <a 
+                                             class="bg-white hover:bg-opacity-70 transition-colors duration-150 text-primary px-6 py-3 font-normal tracking-wide capitalize inline-flex justify-center items-center space-x-2 rounded-sm shadow-lg" 
+                                             href="#"
+                                        >
+                                             <span>About shop</span>
+                                             <svg class="w-5 h-5" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                             </svg>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <!-- section-hero ends -->
+               
+               <!-- section-features starts -->
+               <section class="page-section page-section--features py-12">
+                    <div class="container">
+                        <div class="page-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xxl:grid-cols-6 gap-8 border-b border-gray-200 py-6">
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNkEzN0YxODUwNzExRUQ4MEUwODJBMTU4QjBGMDBDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQxNkEzN0YyODUwNzExRUQ4MEUwODJBMTU4QjBGMDBDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDE2QTM3RUY4NTA3MTFFRDgwRTA4MkExNThCMEYwMEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDE2QTM3RjA4NTA3MTFFRDgwRTA4MkExNThCMEYwMEMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4nlYOHAAAJsklEQVR42uxcfWwb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" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Best deals
+                                        </a>
+                                   </h6>
+                              </div>
+
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc5OTI4REQzODUwNzExRUQ5OEQzOEMxQjRDNUU3NzUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc5OTI4REQ0ODUwNzExRUQ5OEQzOEMxQjRDNUU3NzUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Nzk5MjhERDE4NTA3MTFFRDk4RDM4QzFCNEM1RTc3NTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Nzk5MjhERDI4NTA3MTFFRDk4RDM4QzFCNEM1RTc3NTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4i+VMqAAALk0lEQVR42uxcCVST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" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Herbal Tea
+                                        </a>
+                                   </h6>
+                              </div>
+
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJFMDMyNUZEODUwNzExRURCOUFDQkZFRDgxOTFFREM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJFMDMyNUZFODUwNzExRURCOUFDQkZFRDgxOTFFREM4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkUwMzI1RkI4NTA3MTFFREI5QUNCRkVEODE5MUVEQzgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkUwMzI1RkM4NTA3MTFFREI5QUNCRkVEODE5MUVEQzgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5QOYA3AAAKqklEQVR42uxcC1BTZxY+SQCBhCQgr1UeN2DVIgnQUQtb2yRqp7pWCFYdd+kKtI4zndnaBdfZ7Ywr4Dqz29W26u5sd6ytj667tj4ArWttu4SoXd3KriGKVVAIjzoCVRLkrXD3P38IGHNRIIEA5jD//Dc39/4XvpxzvvP4A49lWXCLvfDdELiBcQPjBsYNzOiLhyseum/fPpXRaGQedU1KSkpBfHy8yWXIIF2P5pDHxR0nj63CRz9mVOXn58eP9u9nHbzRjGOKi4sZtVqtFT23nPEKj6HnpgZNAQ8Pe8WtOLQV/PkdZ2uqjc9PeFMymUxSMjE+sUoQSILpuSDZDM5rg+LUUHXir2FPhPOVSqXoM4zd5sa+c9093ZzXNpWXgFKpPP1EAKNSqYw432uo7jvX0dnJee399rtWIJ8cumY7W/uB6ergvKal7hoQVro44elar9dLzWazlPyx+ssVJcT5zqLnm5vEwBdJbK7tuH2Tzni9TqdjiEkZJxxdb9++XdNLz4OhaE7axoE0f/HiRemEoOvc3NyMvLy8nOBYORMSq7B5L0AohBCJZFDrtJrNoP3sIHgK+AZTU1PcaCjMiAIjkfqXimc+rVC+vcnmfKCfHzw/Y/qQ1qoquwwbXppvTE9P3793796ccet8MZhrNpvEM5dq7N4L9BMNeT3ZrFiY89Ji5n96/TMTgZUYT2IyD4tw0qRhLSYUi6HaaIwY18BYg7mGywb7CLitbVhrlp3/N6hVquJxDQxmxhi5ln36j6uVRV/bvHejvgHM7e2DXquhtgb+uCYDGmtrjRqNJn9C0HVEZKTOAaq2oW3iePMmVHZNtKfwu+vXk6WyqCHfe6+1FZqqKmHPnj3qjIyMUTGjUYt80d8EyKJhwZZ3hnxvPfFRX2/8NTAMM6rRr0sqeDaBnkgIPPIzkLT7+EzsXKkHbE02SOwHc6OiwctD8GgmavoBjk7U7BqDMlFwiM25Z6OjHgsKyqyk5+hcUFCgmVDAYBJ512wWRc1/0UZbPAWDV1YS8UJBYWHqhAEGSw05ubl5JIG0SSKDSK40FHl5zVoa8WZmZuaNe2AwV1KqVLqO+/cVz7y+tt+pCfgQGRg4pLXQnJa8vpYhyePq1NTU98ctMDt27NBgN6CdgIIUjVRtFXlYOHh7eg55zcy8LbAyewODviY+IaEQtXFclR1Q3fGTxRoMlhu8hCJoaaiHuv+cA8G9LmCItgSHR0BMYhKdhypYl9mbuxE8+HxDsVarHKmmnFOB+SURoi1vRc1fyCStW2/Ji4q+gtKP/gLtrfa1XaFETMxkHhk/BiYmls5cRaoLX34BZee+gYyc35F7JLQ2k7tCA558vl6r1apHBBxn5RYkZFdhPkNAYdMKTtIxc6mG5jmKMG/2y/XR7P3PFWzJn6azRzYy7LqUQFYpF3LmRcysWJb4FZaAYHOeAMluPVXEHq5roLNQLGZJRKwds7kS2ntCQsJFf1kUs5D4FDSfczvfg0qiLT9PCoBtK6ZCQCgfeANUMnWGFtBdagFjfRdUN3TZvBcZ7AUpSRKQCgWwbIsRugW+kHOokBauUItyVqRixl2Qn5+fNeZMKS4+ofDq9YrklF177UDZnW7xI4If9RBK4jn0HARu/m8q4U6HVx84n723FYeRaGymM5NMh1mJsES8oVSvkK9Ko6CgT7GA4t8HCs+TdRgUWg4M8YKjv40EQXc7bF2zmvofwlQgi4llsrKynErjgtzcXIcW6BKK2i40t74zc2kqZZ9vfp8LMSGe8Pm6form+ViGMyTU3xMSZ/jCB0erwdTYAHMX/QSmTpsGX3yyD727WaVS6ceExuSXVy5DUFAuHfwbdLS2w6E3ZLb26j180+ESpUIExHlD8aFPqZ/BAJAwGoOMOCZMKZKR6Y7u/pCicqfqBmAJc+PLocBM9rIFZhI7KBB2FjbC7DevgceSUjqmvfYddcxcsulnoSARehD/so2+RpPC3RQkhlK5FBhkoppqY4Sn0DcZX187XgASHwG8OT/oYfdODHZg/2Jq6YbNf79FQcjedROu3mIhIiYC5Er5o4tfIgG8lTKZagzWhFFrgsPCMW3IdCkwvWUABrPmrtYWqi3J8YRWfW1LCTyvx7DM2zdg84F6CsYr61+BrI+zIW1T2mOBQVmXYvkQTuze1ZeF63S6F1wKTJFWu4DELZSJ6ntbJEjP9u59AI2rbCdmUw4Vt7phyRtLKBjT5/R3JztbLdtDJCLBI7UmOVEMJadO0NdzFy3uY0qXAXPm9Ol5wb2lBMyD0IyU0zk6jJ4sp/m89n4tdLIC+OmmV0GhVNhdU15SDmIS1MVHcdCZhx+AzxR6iMFffd33NE3oLWoxxMxdA4w1sw2Jtah7W/0tiAvn5mMexxOyd30PBqIxqb9aDiFMCOd9tVeqQSUXcscYibtBoP4nBSeuF7hG4mdQSEyDJQ+1S4Cx7qVDM0K5RT6tF6YP0I/m2ZvQ/n81wbzl8yAyJpLzlvIL5SRGaabaYLdcwGwAsWXfHl+W1qdRxitldA4MDweT2Sx1lcZQVfUfTJ/oIWB2FjSCt68XzFk8Z8BbLpy8ABEkR0pfaO+zeJNn9x/3AiSP9qPMRDWGpAmler3ClRrTV2uh+VLYAKEtj2fjW1BbYolP8RZyR31nDp+Bmis1kJMWMujfJ8C3BxrrasdWBa+1FxiJr2AAhel3vphBo3A5WxSDzgBnD5+lTMOlLeOqGG41J0Mtd5OefcCWrMBwOVwE5cQHJ0Au84GPswau7LG3S/qPm6+NLWBUvVsxMH6xOmBTO/d+XejpPywljhcDORuzbDTBgc0HKChxMm/Q/iGaxicDAnOHANMLSE/dMYvPq+qiFUBrxU8skTQ7CowjnUgjMhMeePv6QPXtrgH+EtuXnW2dNEapN9ZDRUkFnS1RbCDNfx4FilW6z68h8RGJZdpvUr9lbrlHS54WdroMCfHxepcAY93IjBqD/SKJbBoY6iq4celhbXrTCMSRbUcsfokEcKsX+MOmtFBaaxm03L9rGahxrd196QBKNaHt2RqN0WUaExYRUUccL9WYYLkCSg9eAlNbt32u1NMPyrtrp8Kxc2ZQykV95QNnFK+Kr34FP4hiqRm1kOGMjdPDdr4L1Oqium/PW0B6NonOx0rN9hpzr/8YgzHUDgTEGaCglFQBAcWyw/XbUyepNamcsB1t2MCQh2u7WlqMWIfBhpo4KBD+XNTAofYjR6lYq0n8RSktPViBiYiMrHFGO2XYpoSF58zMTFqHwR7SU8nL4L8f7YJPzt2BSJtCFQv8RtYm0HOW7DzWCEI/P8pItP9EgElPTy92yuKO9F5wT5yXSMSuOHCIjkm+vo7usxvyWJm9gfaZcCavq5y1rd6h9om1nyRflcYoVr1K0wPsEDwsU6RSEhn7Ol1jgsLCQb1yFdWWDYsWwNNRsv0ks053xtoO95U0Gs2OwsLC5MR12Uz0A3tgHpRQEmMkPTVtRPwMgpKzMhWMZZeN2K61hhIuB4bmPnFxxy8ZDLH+smjGylAPS3RIMHgJBE4FBRNH9CuEop3ecHNarzcnJyfDTyy+BI59BWfIX9dRKpX7RuLbtiOyzxc3DY109otbZEfye9k8979JGaGygxsYNzBucQPjBsYNjNPk/wIMAAO8uXScv/iHAAAAAElFTkSuQmCC" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Hand made
+                                        </a>
+                                   </h6>
+                              </div>
+
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="/ecomax-template/assets/feature-04-e3e43972.png" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Fruits & Vegtables
+                                        </a>
+                                   </h6>
+                              </div>
+
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE2QzIxMzNEODUwODExRURBMkEwQ0U5MTA3NzVGRTgwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE2QzIxMzNFODUwODExRURBMkEwQ0U5MTA3NzVGRTgwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTZDMjEzM0I4NTA4MTFFREEyQTBDRTkxMDc3NUZFODAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTZDMjEzM0M4NTA4MTFFREEyQTBDRTkxMDc3NUZFODAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz745WnUAAALNUlEQVR42uxcC1AT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" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Honey jars
+                                        </a>
+                                   </h6>
+                              </div>
+
+                              <div class="page-grid-col flex flex-col items-center justify-start space-y-4 px-4 py-6 rounded-sm border-0 border-gray-100 shadow">
+                                   <img 
+                                        class="w-20 h-20 block object-cover object-center"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNkEzN0YxODUwNzExRUQ4MEUwODJBMTU4QjBGMDBDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQxNkEzN0YyODUwNzExRUQ4MEUwODJBMTU4QjBGMDBDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDE2QTM3RUY4NTA3MTFFRDgwRTA4MkExNThCMEYwMEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDE2QTM3RjA4NTA3MTFFRDgwRTA4MkExNThCMEYwMEMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4nlYOHAAAJsklEQVR42uxcfWwb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" 
+                                        alt=""
+                                   >
+
+                                   <h6 class="font-semibold tracking-normal capitalize text-gray-800 hover:text-primary focus:text-primary transition-colors duration-150">
+                                        <a class="inline-block" href="#">
+                                             Fast foods
+                                        </a>
+                                   </h6>
+                              </div>
+                        </div>
+                    </div>
+               </section>
+               <!-- section-features ends -->
+               
+               <!-- section-features-products starts -->
+               <section class="page-section page-section--feature-products py-12">
+                    <div class="container">
+                         <!-- title and subtitle row -->
+                         <div class="page-row mb-6">
+                              <div class="page-row-col flex flex-col items-center justify-center space-y-3">
+                                   <h2 class="text-gray-800 tracking-wide">
+                                        Featured Products
+                                   </h2>
+
+                                   <p class="text-gray-500 tracking-wide">
+                                       Street art salvia irony wolf waistcoat actually lomo meh fap jean shorts
+                                   </p>
+                              </div>
+                         </div>
+
+                         <!-- product row -->
+                         <div class="page-row flex flex-col-reverse space-y-6 md:flex-row md:space-y-0">
+                              <!-- banner column -->
+                              <div class="page-row-col md:w-[35%] lg:w-[25%]  order-20 lg:order-10">
+                                   <div class="page-block w-full flex flex-col justify-between items-center space-y-6 px-6">
+                                        <div class="page-block-inner">
+                                             <a class="w-full block" href="#">
+                                                  <img 
+                                                       class="w-full h-auto object-cover object-center block"
+                                                       src="/ecomax-template/assets/lemon-juice-banner-426af22b.jpg" 
+                                                       alt=""
+                                                  >
+                                             </a>
+                                        </div>
+
+                                        <div class="page-block-inner">
+                                             <a class="w-full block" href="#">
+                                                  <img 
+                                                       class="w-full h-auto object-cover object-center block"
+                                                       src="/ecomax-template/assets/mango-juice-banner-17beb9fe.jpg" 
+                                                       alt=""
+                                                  >
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <!-- product column -->
+                              <div class="page-row-col md:w-[65%] lg:w-[75%] order-10 lg:order-20">
+                                   <div class="page-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-01-c23f112c.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <span class="product-card-badge">Sale</span>
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Green Vegtables
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-02-bc32c6de.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Fresh Cocunuts
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-03-61750460.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Golden cat fishes
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-04-fb052d4c.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Apple Seeder Viniger
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-05-aff1c6ac.jpg" 
+                                                                 alt=""
+                                                            >
+                                                            
+                                                            <span class="product-card-badge">Sale</span>
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Yellow Papyas group
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                    
+                                        <div class="page-grid-col">
+                                             <div class="product-card">
+                                                  <div class="product-card-header">
+                                                       <a class="inline-block w-full rounded overflow-hidden" href="#">
+                                                            <img 
+                                                                 class="w-full h-auto block"
+                                                                 src="/ecomax-template/assets/featured-product-04-fb052d4c.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <div class="product-card-btn-container">
+                                                                 <button class=" product-card-btn product-card-btn--cart" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--favourite" type="button">
+                                                                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+                                                                      </svg>
+                                                                 </button>
+     
+                                                                 <button class=" product-card-btn product-card-btn--zoom" type="button">
+                                                                      <svg  class="w-4 h-4" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                                           <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
+                                                                           <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
+                                                                      </svg>
+                                                                 </button>
+                                                            </div>
+                                                       </a>                                                       
+                                                  </div>
+
+                                                  <div class="product-card-body">
+                                                       <h6 class="product-card-title">
+                                                            <a class="w-full inline-block" href="#">
+                                                                 Apple Seeder Viniger
+                                                            </a>
+                                                       </h6>
+                                                       
+                                                       <div class="product-card-price-container">
+                                                            <span class="product-card-price product-card-price--sale">
+                                                                 $38.00
+                                                            </span>
+
+                                                            <span class="product-card-price product-card-price--regular">
+                                                                 $45.00
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <!-- section-features-products ends -->
+               
+               <!-- section-top-product starts -->
+               <section class="page-section page-section--top-product py-12 bg-cover bg-center bg-no-repeat" style="background-image: url('/ecomax-template/assets/page-home-top-product-section-3e2a5676.jpg');">
+                    <div class="container">
+                         <div class="page-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                              <div class="page-grid-col flex flex-col justify-center items-center">
+                                   <img     
+                                        class="w-4/5 h-auto block object-cover object-center"
+                                        src="/ecomax-template/assets/top-product-c69ceb7c.png" 
+                                        alt="Top Product"
+                                   >
+                              </div>
+
+                              <div class="page-grid-col flex flex-col justify-center p-6 k">
+                                   <div class="page-block space-y-4">
+                                        <div class="page-block-inner page-block-inner--header space-y-4">
+                                             <span class="inline-block text-primary text-lg tracking-wide capitalize">
+                                                  Product Reviews
+                                             </span>
+
+                                             <h2 class="text-gray-800 tracking-wide capitalize">
+                                                  Savon Herbal Oil
+                                             </h2>
+
+                                             <span class="inline-block text-primary text-lg font-semibold text-opacity-80 tracking-wide capitalize">
+                                                  $30.00 - $40.00
+                                             </span>
+
+                                             <div class="flex items-center space-x-2">
+                                                  <span class="inline-block text-gray-700 uppercase font-semibold tracking-wide">
+                                                       Brand:
+                                                  </span>
+                                                  
+                                                  <img 
+                                                       width="45"
+                                                       height="45"
+                                                       class="w-10 h-10 bg-white border border-gray-300 block object-cover object-center"
+                                                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwQzc2NjA0ODY1RDExRUQ4NDdEQ0JDOUZCRDM3RTY2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwQzc2NjA1ODY1RDExRUQ4NDdEQ0JDOUZCRDM3RTY2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBDNzY2MDI4NjVEMTFFRDg0N0RDQkM5RkJEMzdFNjYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBDNzY2MDM4NjVEMTFFRDg0N0RDQkM5RkJEMzdFNjYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4sgnHhAAAC8klEQVR42mL8//8/w1ADTAxDEIw6ml6A5ebVq3LsHBxvhoJjf/74IaKurf2IBcRRUFb+NhQcDQzg0TQ96uhRR486etTRVADXnt6UPHHnjA3NakRaGFq6ouEZHycvg4WKCeOQCOm0eUX/rz+7xXDy7lmGXVf2xw96R4McuefqQTi/eUPvAnQ1xx5sKl5wqu7roEkezRt6UBz59P1zhgk7Z54ocE+3uPnqjNHCU/Vn3357zsDJyjM4QnrN6U1NT9+/YNCQUkURn39omfmDt7f4+w6knYX1kb7//jJIHH1qcy2I1pJSRxH//OMLw4Yz+z/4aKcBHft54NL0haf7Qx9/uCmCmhSegWlQqYEOdl85wCDMLUVxCFPkaKCD41t2Rb5u3hXxf++tZRNBYodrtjJ2RdQ3Y3M0qDThY5Ud2NLj7ddnjiD6yYdbDKsu9OSlrzL6v+BU/dcQU7+6EFNfjHQNAl++/4WzByQjfvv1mQtd7PiDzVwF6+3+v/l+k2FF1mysDocBA2mHb3R3tKyg+lYQLcQliSIOSrPTjxYzXHm5n6EnohGnfme1aHn6O1pAfSGEVsMqv/BUAwMz62eGPLc0RIXA+gNMO6lG3gDqf0N3RxtIO64G0bden2WwVPDBqgaY1hlA6RsEpAUlGH79f1eiL2XPEG5Yqjlg1bgMvxo4OYCKMvRkAsuknOwM4LRtrmwCFsuy6WccsNIDBHx10sNANLDIA4ZeCdYSAVg0MsgISoFC3NZKwa93wBtMoCQCim5QaG++OpMh07oPw+FAR29NsouyBTZRjwyaVh4oukHJBFpeMxQ7zgYnG7ij39/0praDqdL2qHVfwQjMjN9ADp9+pIghDJhU4s0awOn84rODNOm5MN64ckUOND5G8ZAVsOl5/MGmwzdfneVSFzP5Zqnga/v22zNHLlbeR7DShmI7rl6FuBXkaNDAOrXxjZenjahuJtStNOuNA0P73OgQwqijRx096ujBBRhHJz9HHT3MHA0QYAAwvJnD2VAeEQAAAABJRU5ErkJggg==" 
+                                                       alt="Savon Stories Logo"
+                                                  >
+                                             </div>
+                                        </div>
+                                        
+
+                                        <div class="page-block-inner page-block-inner--body ">
+                                             <p class="text-gray-500 tracking-wide leading-relaxed">
+                                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, facere, vitae tempora, voluptatibus magnam expedita odit iste earum odio aperiam temporibus optio cumque fugiat aliquam impedit quod eum ad cum.
+                                             </p>
+                                        </div>
+
+                                        <div class="page-block-inner page-block-inner--footer space-y-4">
+                                             <div class="flex items-center space-x-2">
+                                                  <span class="inline-block text-gray-700 uppercase font-semibold tracking-wide">
+                                                       Weight:
+                                                  </span>
+                                                  <button class="inline-block p-2 bg-white text-sm text-gray-500 hover:text-gray-800 border border-gray-300" type="button">250G</button>
+                                                  <button class="inline-block p-2 bg-white text-sm text-gray-500 hover:text-gray-800 border border-gray-300" type="button">1KG</button>
+                                                  <button class="inline-block p-2 bg-white text-sm text-gray-500 hover:text-gray-800 border border-gray-300" type="button">5KG</button>
+                                             </div>
+
+                                             <div class="flex items-center space-x-4">
+                                                  <div class="w-full lg:w-[40%] xl:w-[35%] xxl:w-[30%]">
+                                                       <button 
+                                                            class="w-full h-full inline-block bg-primary py-3 hover:bg-opacity-80 text-white uppercase tracking-wide transition-colors duration-150" 
+                                                            type="button" 
+                                                       >
+                                                            Add to cart
+                                                       </button>
+                                                  </div>
+     
+                                                  <div 
+                                                       id="counter-custom"
+                                                       class="w-full lg:w-[25%] xl:w-[20%] xxl:w-[15%] flex space-x-2"
+                                                       x-data="{ count: 1 }"
+                                                  >
+                                                       <input 
+                                                            class="w-full text-center py-3 text-lg font-semibold text-gray-600 inline-block bg-white appearance-none border border-gray-300"
+                                                            type="text"
+                                                            @change="(e) => { count = parseInt(e.target.value) }"
+                                                            :value="count"
+                                                       >
+                                                   
+                                                       <div class="flex flex-col justify-between space-y-2">
+                                                            <button 
+                                                                 class="inline-block bg-white px-3 py-[2px] font-semibold border border-gray-300" 
+                                                                 type="button"
+                                                                 @click="count = count + 1"
+                                                            >
+                                                                 <svg class="w-4 h-4 bi bi-plus" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                                                 </svg>
+                                                            </button>
+     
+                                                            <button 
+                                                                 class="inline-block bg-white px-3 py-[2px] border border-gray-300" 
+                                                                 type="button"
+                                                                 @click="count = count - 1"
+                                                            >
+                                                                 <svg  class="w-4 h-4 bi bi-dash" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <!-- section-top-product ends -->
+
+
+               <!-- section-faq starts -->                              
+               <section class="page-section page-section--faq w-full h-auto flex flex-col justify-center bg-cover bg-center bg-no-repeat min-h-[750px] py-12" style="background-image: url('/ecomax-template/assets/page-home-faq-section-2eec0dae.jpg');">
+                    <div class="container">
+                        <!--  title and subtitle row-->
+                         <div class="page-row mb-6">
+                              <div class="page-row-col flex flex-col items-center justify-center space-y-3">
+                                   <h2 class="text-gray-800 tracking-wide">
+                                        Some Questions
+                                   </h2>
+
+                                   <p class="text-gray-500 tracking-wide">
+                                       Street art salvia irony wolf waistcoat actually lomo meh fap jean shorts
+                                   </p>
+                              </div>
+                         </div>
+
+                         <!--  accordion row-->
+                         <div class="page-row">
+                              <div class="page-row-col max-w-full md:max-w-[700px] xl:max-w-[600px] xxl:max-w-[750px] mx-auto xl:mr-auto xl:ml-0">
+                                   <div 
+                                        id="accordion" 
+                                        class="accordion flex flex-col space-y-10 justify-center"
+                                        x-data="{
+                                             data: [
+                                                  {
+                                                       id: 1,
+                                                       isOpen: true
+                                                  },
+
+                                                  {
+                                                       id: 2,
+                                                       isOpen: false
+                                                  },
+
+                                                  {
+                                                       id: 3,
+                                                       isOpen: false
+                                                  }
+                                             ]
+                                        }"
+                                   >
+
+                                        <template x-for="accordion in data" :key="accordion.id">
+                                             <div class="accordion-item">
+                                                  <div class="accordion-header">
+                                                       <button 
+                                                            :class="`w-full flex justify-between items-center px-6 py-4 rounded-md transition-colors duration-150  ${ accordion.isOpen ? 'bg-primary text-white' : 'text-gray-500 hover:text-primary bg-white border border-gray-300' }`"
+                                                            type="button"
+                                                            @click="data = data.map(item => ({ ...item, isOpen: item.id == accordion.id ? !item.isOpen : false }))"
+                                                       >
+                                                            <h6 class="font-semibold tracking-wide">
+                                                                 How to purches from your shop?
+                                                            </h6>
+
+                                                            <svg x-show="!accordion.isOpen" class="w-4 h-4 fill-primary bi bi-plus-square-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                                                            </svg>
+
+                                                            <svg x-show="accordion.isOpen" class="w-4 h-4 fill-white bi bi-dash-square-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>
+                                                            </svg>
+                                                       </button>
+                                                  </div>
+
+                                                  <div class="accordion-body mt-4 px-4 py-4" x-show="accordion.isOpen">
+                                                       <p class="text-gray-500 font-medium leading-relaxed tracking-wide">
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, ab quam earum tenetur, reiciendis fugit sed officiis eligendi numquam expedita adipisci. Facilis dolores commodi nisi eos perferendis sapiente. Labore, magni.
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                        </template>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section> 
+               <!-- section-faq ends -->
+               
+               <!-- section-features-overview starts -->
+               <section class="page-section page-section--overview w-full h-auto flex flex-col justify-center bg-cover bg-center bg-no-repeat min-h-[350px]" style="background-image: url('/ecomax-template/assets/page-home-overview-section-c5354562.jpg');">
+                    <div class="container">
+                         <div class="page-grid">
+                              <div class="page-grid-col">
+                                   <div class="w-full flex flex-col items-center justify-center relative">
+                                        <img 
+                                             class="w-20 h-20 block mb-6 object-cover object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk1MjU5M0I0ODVBRTExRURCNTVBQjk5MUY1MkI4NDQ2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk1MjU5M0I1ODVBRTExRURCNTVBQjk5MUY1MkI4NDQ2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTUyNTkzQjI4NUFFMTFFREI1NUFCOTkxRjUyQjg0NDYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTUyNTkzQjM4NUFFMTFFREI1NUFCOTkxRjUyQjg0NDYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5clw9IAAAI1ElEQVR42uycC1BU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" 
+                                             alt="Overview 01"
+                                        >
+
+                                        <h2 class="text-[2.5rem] text-gray-800 tracking-wide mb-2">
+                                             560
+                                        </h2>
+
+                                        <p class="text-gray-500 text-lg capitalize tracking-wider">
+                                             Good Reviews
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="page-grid-col">
+                                   <div class="w-full flex flex-col items-center justify-center relative">
+                                        <img 
+                                             class="w-20 h-20 block mb-6 object-cover object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3M0ZEQjBCODVBRTExRUQ5MTQxQUM0QTAzMEFFQjgyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3M0ZEQjBDODVBRTExRUQ5MTQxQUM0QTAzMEFFQjgyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjczRkRCMDk4NUFFMTFFRDkxNDFBQzRBMDMwQUVCODIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjczRkRCMEE4NUFFMTFFRDkxNDFBQzRBMDMwQUVCODIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GO1rXAAAJMUlEQVR42uxcDUyU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" 
+                                             alt="Overview 01"
+                                        >
+
+                                        <h2 class="text-[2.5rem] text-gray-800 tracking-wide mb-2">
+                                             197
+                                        </h2>
+
+                                        <p class="text-gray-500 text-lg capitalize tracking-wider">
+                                             Organic Branch
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="page-grid-col">
+                                   <div class="w-full flex flex-col items-center justify-center relative">
+                                        <img 
+                                             class="w-20 h-20 block mb-6 object-cover object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkNGMUQ5RUJCODVBRTExRUQ5NzJCOEE3NjhEMjg4MTBDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkNGMUQ5RUJDODVBRTExRUQ5NzJCOEE3NjhEMjg4MTBDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0YxRDlFQjk4NUFFMTFFRDk3MkI4QTc2OEQyODgxMEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0YxRDlFQkE4NUFFMTFFRDk3MkI4QTc2OEQyODgxMEMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6QWFwGAAALjUlEQVR42uycDVAU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" 
+                                             alt="Overview 01"
+                                        >
+
+                                        <h2 class="text-[2.5rem] text-gray-800 tracking-wide mb-2">
+                                             268
+                                        </h2>
+
+                                        <p class="text-gray-500 text-lg capitalize tracking-wider">
+                                             Cultivator Land
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="page-grid-col">
+                                   <div class="w-full flex flex-col items-center justify-center relative">
+                                        <img 
+                                             class="w-20 h-20 block mb-6 object-cover object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYyNEY4NjU4ODVBRTExRURCOEFERTYwQTgzRUYwMjY1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYyNEY4NjU5ODVBRTExRURCOEFERTYwQTgzRUYwMjY1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjI0Rjg2NTY4NUFFMTFFREI4QURFNjBBODNFRjAyNjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjI0Rjg2NTc4NUFFMTFFREI4QURFNjBBODNFRjAyNjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz64QHhWAAAI2UlEQVR42uxcC1BU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" 
+                                             alt="Overview 01"
+                                        >
+
+                                        <h2 class="text-[2.5rem] text-gray-800 tracking-wide mb-2">
+                                             340
+                                        </h2>
+
+                                        <p class="text-gray-500 text-lg capitalize tracking-wider">
+                                             Total Consumer
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <!-- section-features-overview ends -->
+               
+               <!-- section-blogs starts -->
+               <section class="page-section page-section--blogs w-full min-h-[950px] flex flex-col justify-center py-12">
+                    <div class="container">
+                          <!-- title and subtitle row -->
+                          <div class="page-row mb-6">
+                              <div class="page-row-col flex flex-col items-center justify-center space-y-3">
+                                   <h2 class="text-gray-800 tracking-wide">
+                                        Latest Blogs
+                                   </h2>
+
+                                   <p class="text-gray-500 tracking-wide">
+                                       Street art salvia irony wolf waistcoat actually lomo meh fap jean shorts
+                                   </p>
+                              </div>
+                         </div>
+
+                         <!--blog card grid-->
+                          <div class="page-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:gap-8 xxl:gap-10">
+                              <div class="page-grid-col">
+                                   <div class="blog-card">
+                                        <div class="blog-card-header">
+                                             <a class="w-full block" href="#">
+                                                  <img
+                                                       class="blog-card-img blog-card-img--thumb" 
+                                                       src="/ecomax-template/assets/blog-thumb-1-4fd1792f.jpg" 
+                                                       alt=""
+                                                  >   
+                                                  
+                                                  <span class="blog-card-badge">
+                                                       Medical
+                                                  </span>
+                                             </a>  
+                                        </div>
+
+                                        <div class="blog-card-body">
+                                             <div class="blog-card-meta">
+                                                  <ul class="blog-card-meta-list">
+                                                       <li class="blog-card-meta-list-item">
+                                                            <img
+                                                                 class="blog-card-img blog-card-img--author" 
+                                                                 src="/ecomax-template/assets/afradbhuiyan-120x150-f87cd6fd.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <a class="blog-card-link blog-card-link--author" href="#">
+                                                                 Afrad Bhuiyan
+                                                            </a>
+                                                       </li>
+
+                                                       <li class="blog-card-meta-list-item">
+                                                            <svg class="blog-card-icon blog-card-icon--date"  fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                                                 <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                            </svg>
+
+                                                            <span class="blog-card-text blog-card-text--date">
+                                                                 December 27, 2022
+                                                            </span>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+
+                                             <h4 class="blog-card-title">
+                                                  <a class="inline-block" href="#">
+                                                       Pure is the most healthy and most nourishing food
+                                                  </a>
+                                             </h4>
+
+                                             <p class="blog-card-excerpt">
+                                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque, ipsam voluptas nam expedita assumenda.
+                                             </p>
+                                        </div>
+
+                                        <div class="blog-card-footer">
+                                             <a class="blog-card-link blog-card-link--readmore" href="#">
+                                                  <span>Read more</span>
+
+                                                  <svg class="blog-card-icon blog-card-icon--chevron-right" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="page-grid-col">
+                                   <div class="blog-card">
+                                        <div class="blog-card-header">
+                                             <a class="w-full block" href="#">
+                                                  <img
+                                                       class="blog-card-img blog-card-img--thumb" 
+                                                       src="/ecomax-template/assets/blog-thumb-2-d1a783c6.jpg" 
+                                                       alt=""
+                                                  >   
+                                                  
+                                                  <span class="blog-card-badge">
+                                                       Medical
+                                                  </span>
+                                             </a>  
+                                        </div>
+
+                                        <div class="blog-card-body">
+                                             <div class="blog-card-meta">
+                                                  <ul class="blog-card-meta-list">
+                                                       <li class="blog-card-meta-list-item">
+                                                            <img
+                                                                 class="blog-card-img blog-card-img--author" 
+                                                                 src="/ecomax-template/assets/afradbhuiyan-120x150-f87cd6fd.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <a class="blog-card-link blog-card-link--author" href="#">
+                                                                 Afrad Bhuiyan
+                                                            </a>
+                                                       </li>
+
+                                                       <li class="blog-card-meta-list-item">
+                                                            <svg class="blog-card-icon blog-card-icon--date"  fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                                                 <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                            </svg>
+
+                                                            <span class="blog-card-text blog-card-text--date">
+                                                                 December 27, 2022
+                                                            </span>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+
+                                             <h4 class="blog-card-title">
+                                                  <a class="inline-block" href="#">
+                                                       Pure is the most healthy and most nourishing food
+                                                  </a>
+                                             </h4>
+
+                                             <p class="blog-card-excerpt">
+                                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque, ipsam voluptas nam expedita assumenda.
+                                             </p>
+                                        </div>
+
+                                        <div class="blog-card-footer">
+                                             <a class="blog-card-link blog-card-link--readmore" href="#">
+                                                  <span>Read more</span>
+
+                                                  <svg class="blog-card-icon blog-card-icon--chevron-right" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="page-grid-col">
+                                   <div class="blog-card">
+                                        <div class="blog-card-header">
+                                             <a class="w-full block" href="#">
+                                                  <img
+                                                       class="blog-card-img blog-card-img--thumb" 
+                                                       src="/ecomax-template/assets/blog-thumb-3-6dd82782.jpg" 
+                                                       alt=""
+                                                  >   
+                                                  
+                                                  <span class="blog-card-badge">
+                                                       Medical
+                                                  </span>
+                                             </a>  
+                                        </div>
+
+                                        <div class="blog-card-body">
+                                             <div class="blog-card-meta">
+                                                  <ul class="blog-card-meta-list">
+                                                       <li class="blog-card-meta-list-item">
+                                                            <img
+                                                                 class="blog-card-img blog-card-img--author" 
+                                                                 src="/ecomax-template/assets/afradbhuiyan-120x150-f87cd6fd.jpg" 
+                                                                 alt=""
+                                                            >
+
+                                                            <a class="blog-card-link blog-card-link--author" href="#">
+                                                                 Afrad Bhuiyan
+                                                            </a>
+                                                       </li>
+
+                                                       <li class="blog-card-meta-list-item">
+                                                            <svg class="blog-card-icon blog-card-icon--date"  fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                                                 <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                            </svg>
+
+                                                            <span class="blog-card-text blog-card-text--date">
+                                                                 December 27, 2022
+                                                            </span>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+
+                                             <h4 class="blog-card-title">
+                                                  <a class="inline-block" href="#">
+                                                       Pure is the most healthy and most nourishing food
+                                                  </a>
+                                             </h4>
+
+                                             <p class="blog-card-excerpt">
+                                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque, ipsam voluptas nam expedita assumenda.
+                                             </p>
+                                        </div>
+
+                                        <div class="blog-card-footer">
+                                             <a class="blog-card-link blog-card-link--readmore" href="#">
+                                                  <span>Read more</span>
+
+                                                  <svg class="blog-card-icon blog-card-icon--chevron-right" fill="currentColor"  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <!-- section-blogs ends -->
+          </main>
+          
+          <!--footer starts -->
+          <footer id="footer" class="footer w-full mt-auto relative">  
+               <section class="footer-section footer-section--overlap w-full lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 hidden lg:block">
+                    <div class="footer-container container">
+                         <div class="foorter-row bg-white shadow-[0px_-3px_15px_6px_#1d1d1d0f]">
+                              <div class="footer-row-col px-10 py-10">
+                                   <div class="footer-grid grid grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <div class="footer-grid-col border-0 border-black flex items-center space-x-2">
+                                             <img 
+                                                  class="w-16 h-16 object-cover object-center block"
+                                                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQkU2NEY5ODREMDExRURBNThFQUFCNTA3MkE4M0RCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQkU2NEZBODREMDExRURBNThFQUFCNTA3MkE4M0RCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVCRTY0Rjc4NEQwMTFFREE1OEVBQUI1MDcyQTgzREIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVCRTY0Rjg4NEQwMTFFREE1OEVBQUI1MDcyQTgzREIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6BxFlsAAALHElEQVR42uxae1BU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" 
+                                                  alt=""
+                                             >
+          
+                                             <div class="w-full flex flex-col space-y-0">
+                                                  <h5 class="text-gray-800 tracking-normal">
+                                                       Curated Products
+                                                  </h5>
+                                                  <p class="text-xs font-normal text-gray-500 tracking-wider capitalize">
+                                                       From hand picked sellers
+                                                  </p>
+                                             </div>
+                                        </div>
+          
+                                        <div class="footer-grid-col border-0 border-black flex items-center space-x-2">
+                                             <img 
+                                                  class="w-16 h-16 object-cover object-center block"
+                                                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJFQzBGN0M4ODREMDExRURCRUU4QzFGM0VBMUZGOEI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJFQzBGN0M5ODREMDExRURCRUU4QzFGM0VBMUZGOEI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkVDMEY3QzY4NEQwMTFFREJFRThDMUYzRUExRkY4QjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkVDMEY3Qzc4NEQwMTFFREJFRThDMUYzRUExRkY4QjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6oE1YpAAALtUlEQVR42uxbe1BU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" 
+                                                  alt=""
+                                             >
+          
+                                             <div class="w-full flex flex-col space-y-0">
+                                                  <h5 class="text-gray-800 tracking-normal">
+                                                       Handmade
+                                                  </h5>
+                                                  <p class="text-xs font-normal text-gray-500 tracking-wider capitalize">
+                                                       From hand picked sellers
+                                                  </p>
+                                             </div>
+                                        </div>
+          
+                                        <div class="footer-grid-col border-0 border-black flex items-center space-x-2">
+                                             <img 
+                                                  class="w-16 h-16 object-cover object-center block"
+                                                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU5RUIwMUFGODREMDExRURCMTk5QkY0ODg4ODVDQTgxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU5RUIwMUIwODREMDExRURCMTk5QkY0ODg4ODVDQTgxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTlFQjAxQUQ4NEQwMTFFREIxOTlCRjQ4ODg4NUNBODEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTlFQjAxQUU4NEQwMTFFREIxOTlCRjQ4ODg4NUNBODEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7sScqrAAAH4UlEQVR42uxaa0xT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" 
+                                                  alt=""
+                                             >
+          
+                                             <div class="w-full flex flex-col space-y-0">
+                                                  <h5 class="text-gray-800 tracking-normal">
+                                                       100% Natural
+                                                  </h5>
+                                                  <p class="text-xs font-normal text-gray-500 tracking-wider capitalize">
+                                                       From hand picked sellers
+                                                  </p>
+                                             </div>
+                                        </div>
+          
+                                        <div class="footer-grid-col border-0 border-black flex items-center space-x-2">
+                                             <img 
+                                                  class="w-[60px] h-[60px] object-cover object-center block"
+                                                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MzdCRjJEODREMTExRUQ4MTM4QjMwQjEzRTA0MDlBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE3MzdCRjJFODREMTExRUQ4MTM4QjMwQjEzRTA0MDlBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTczN0JGMkI4NEQxMTFFRDgxMzhCMzBCMTNFMDQwOUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTczN0JGMkM4NEQxMTFFRDgxMzhCMzBCMTNFMDQwOUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4sQ6PjAAAF0klEQVR42uyae0xb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" 
+                                                  alt=""
+                                             >
+          
+                                             <div class="w-full flex flex-col space-y-0">
+                                                  <h5 class="text-gray-800 tracking-normal">
+                                                       Shipping
+                                                  </h5>
+                                                  <p class="text-xs font-normal text-gray-500 tracking-wider capitalize">
+                                                       From hand picked sellers
+                                                  </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+                   
+               <section class="footer-section footer-section--info w-full h-auto py-16 lg:py-0 lg:h-[650px] flex flex-col justify-center bg-[#0C1127] bg-contain bg-center bg-no-repeat" style="background-image: url('/ecomax-template/assets/footer-bg-2829b803.jpg');">
+                    <div class="footer-container container">
+                         <div class="footer-grid grid grid-cols-12 gap-6"> 
+                              <div class="footer-grid-col col-span-12 order-2 lg:order-1 lg:col-span-3 xl:col-span-4 flex flex-col space-y-6">
+                                   <h4 class="text-white tracking-wider capitalize font-bold">
+                                        About Us
+                                   </h4>
+                                   
+                                   <p class="text-gray-200 font-normal tracking-wider">
+                                      Corporate clients and leisure travelers has been relying on Groundlink for dependable safe, and professional chauffered car service in major cities across World. Indeed it has been more than one decade and five years that Groundlink
+                                   </p>
+                                   
+                                   <ul class="flex space-x-4">
+                                        <li>
+                                             <a class="w-8 h-8 inline-flex justify-center items-center bg-white text-gray-500 hover:bg-primary hover:text-white transition-colors duration-150  rounded-full" href="#">
+                                                  <svg class="w-[50%]" fill="currentColor" viewBox="0 0 16 16">
+                                                       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                  </svg>
+                                             </a>
+                                        </li>
+
+                                        <li>
+                                             <a class="w-8 h-8 inline-flex justify-center items-center bg-white text-gray-500 hover:bg-primary hover:text-white transition-colors duration-150  rounded-full" href="#">
+                                                  <svg class="w-[50%]" fill="currentColor" viewBox="0 0 16 16">
+                                                       <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                  </svg>
+                                             </a>
+                                        </li>
+
+                                        <li>
+                                             <a class="w-8 h-8 inline-flex justify-center items-center bg-white text-gray-500 hover:bg-primary hover:text-white transition-colors duration-150  rounded-full" href="#">
+                                                  <svg class="w-[50%]" fill="currentColor" viewBox="0 0 16 16">
+                                                       <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+                                                  </svg>
+                                             </a>
+                                        </li>
+
+                                        <li>
+                                             <a class="w-8 h-8 inline-flex justify-center items-center bg-white text-gray-500 hover:bg-primary hover:text-white transition-colors duration-150  rounded-full" href="#">
+                                                  <svg class="w-[50%]" fill="currentColor" viewBox="0 0 16 16">
+                                                       <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                                                  </svg>
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div> 
+                              
+                              <div class="footer-grid-col col-span-12 order-1 lg:order-2 lg:col-span-5 xl:col-span-4">
+                                   <div class="footer-row flex">
+                                        <div class="footer-row-col w-full p-2 flex flex-col space-y-6">
+                                             <h4 class="text-white tracking-wider capitalize">
+                                                  Useful Links
+                                             </h4>
+
+                                             <ul class="flex flex-col space-y-4">
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">About</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">News</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">Partners</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">Room Details</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">Gallery</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-normal tracking-wider inline-block">Contacts</a></li>
+                                             </ul>
+                                        </div>
+
+                                        <div class="footer-row-col w-full p-2 flex flex-col space-y-6">
+                                             <h4 class="text-white tracking-wider capitalize">
+                                                  Help
+                                             </h4>
+
+                                             <ul class="flex flex-col space-y-4">
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">About</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">News</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">Partners</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">Room Details</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">Gallery</a></li>
+                                                  <li><a href="#" class="text-gray-200 hover:text-primary font-semibold tracking-wider inline-block">Contacts</a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              
+                              <div class="footer-grid-col col-span-12 order-3 lg:order-3 lg:col-span-4 xl:col-span-4 flex flex-col space-y-6">
+                                   <a class="inline-block" href="#">
+                                        <img 
+                                             class="w-ful h-auto object-cover block object-center"
+                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAAAhCAYAAADKxQmiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM2MCwgMjAyMC8wMi8xMy0wMTowNzoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY2OEIyQjBGODQ2MjExRUQ4ODgxOTc2QTZDMTNFNjI2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY2OEIyQjEwODQ2MjExRUQ4ODgxOTc2QTZDMTNFNjI2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjY4QjJCMEQ4NDYyMTFFRDg4ODE5NzZBNkMxM0U2MjYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjY4QjJCMEU4NDYyMTFFRDg4ODE5NzZBNkMxM0U2MjYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GcxBoAAAJaElEQVR42uxce1BU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" 
+                                             alt="Ecomax logo white"
+                                        >
+                                   </a>
+
+                                   <div class="space-y-4">
+                                        <p class="text-gray-200 font-normal tracking-wider">
+                                             We're a team of designers and developers create high quality Megento, Prestashop
+                                        </p>
+                                        
+                                        <p class="text-gray-200 font-normal tracking-wider flex items-center space-x-2">
+                                             <svg class="w-5 h-5"  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                  <circle cx="12" cy="10" r="3"></circle>
+                                             </svg>
+                                             
+                                             <span>254 Lillian Blvd, Holdbrook</span>
+                                        </p>
+                                   </div>
+                                   
+                                   <form action="">
+                                        <div class="flex bg-white p-1">
+                                             <input 
+                                                  class="w-full bg-transparent text-gray-700 tracking-wider font-normal px-2 py-2 border-2 border-transparent focus:border-primary"
+                                                  type="text" 
+                                                  placeholder="Enter E-mail address" 
+                                                  name="" 
+                                                  id=""
+                                             >
+
+                                             <button class="bg-primary hover:bg-opacity-70 focus:bg-opacity-70 transition-colors duration-150 px-6 py-3 text-white capitalize tracking-wider font-normal inline-block" type="submit">
+                                                  Subscribe
+                                             </button>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
+               <section class="footer-section footer-section--notice bg-[#272B3F] py-4">
+                    <div class="container">
+                         <div class="footer-row flex flex-col lg:flex-row justify-center lg:justify-between space-y-2 lg:space-y-0">
+                              <div class="footer-row-col">
+                                   <p class="text-white text-center">
+                                        &copy; ThemePlot 2021 All rights reserved.
+                                   </p>
+                              </div>
+
+                              <div class="footer-row-col">
+                                   <ul class="flex justify-center space-x-2">
+                                        <li><a class="text-gray-200 hover:text-primary font-bold tracking-normal" href="#">Terms of Use</a></li>
+                                        <li><span class="text-base text-gray-200">|</span></li>
+                                        <li><a class="text-gray-200 hover:text-primary font-bold tracking-normal" href="#">Privacy Policy</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                         
+                    </div>
+               </section>
+          </footer>
+          <!--footer ends -->
+
+          
+     </body>
+</html>
